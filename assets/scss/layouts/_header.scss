@@ -1,0 +1,70 @@
+#header {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	line-height: 100px;
+	z-index: 100;
+	transition: all 0.25s ease;
+
+	.title {
+		font-size: 20px;
+		font-weight: 500;
+		color: #fff;
+	}
+
+	.menu {
+		display: flex;
+
+		li {}
+
+		a {
+			padding: 0 15px;
+			display: block;
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 80px;
+			color: #fff;
+		}
+	}
+
+	// 헤더 메뉴 폰트 색상 변경
+	&[data-header-color="dark"] {
+		.title {
+			color: #555;
+		}
+
+		.menu {
+			a {
+				color: #555;
+			}
+		}
+	}
+	// &.dark {
+	// 	.title {
+	// 		color: #555;
+	// 	}
+
+	// 	.menu {
+	// 		a {
+	// 			color: #555;
+	// 		}
+	// 	}
+	// }
+
+	// 스크롤 시 헤더 색상 변경
+	&.fixed {
+		background-color: rgba(999,999,999,0.8);
+		box-shadow: 0 2px 5px -5px #555;
+		line-height: 80px;
+
+		.title {
+			color: #555;
+		}
+
+		.menu {
+			a {
+				color: #555;
+			}
+		}
+	}
+}

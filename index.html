@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>portfolio(yoo nam mi)</title>
+
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/113a5cc272.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+	<!-- css -->
+	<link rel="stylesheet" href="/assets/css/reset.min.css">
+	<link rel="stylesheet" href="/assets/css/core.min.css">
+	<link rel="stylesheet" href="/assets/css/grid.min.css">
+	<link rel="stylesheet" href="/assets/css/main.min.css">
+
+	<!-- vendor (외부파일) -->
+
+</head>
+
+<body>
+	<div id="wrap">
+
+		<header id="header">
+			<div class="container">
+				<h1 class="title">Yoo Nam Mi</h1>
+				<ul class="menu">
+					<li><a href="#" data-menu-index="1">Project</a></li>
+					<li><a href="#" data-menu-index="2">Team</a></li>
+					<li><a href="#" data-menu-index="3">Contact Us</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<main id="main">
+			<section class="sec-slider">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide slide1 has-overlay" data-header-color="light">
+							<div class="container">
+								<div class="text-wrap">
+									<div class="title">Portfolio</div>
+									<div class="desc">HTML, JavaScript, SASS 등 Front-end 개발 연습하기 위해 퍼블리싱 했습니다.</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide slide2 has-overlay" data-header-color="light">
+							<div class="container center">
+								<div class="title">
+								<span>P</span>
+								<span>R</span>
+								<span>O</span>
+								<span>G</span>
+								<span>R</span>
+								<span>A</span>
+								<span>M</span>
+								<span>M</span>
+								<span>I</span>
+								<span>N</span>
+								<span>G</span>
+							</div>
+							</div>
+						</div>
+						<div class="swiper-slide slide3" data-header-color="dark">
+							<div class="container">
+								<img src="/assets/images/slider/bg_03@1x.png" alt="배경이미지">
+								<div class="text-wrap">
+									<div class="title">Lorem Ipsum</div>
+									<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae, maecenas aliquet penatibus nunc et in quam. Faucibus facilisis libero elit enim leo congue posuere.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="swiper-pagination"></div> -->
+					<div class="btns">
+						<div class="btn_stop btn">
+							<i class="far fa-hand-rock"></i>
+							<span class="text">STOP</span>
+						</div>
+						<div class="btn_play btn">
+							<i class="far fa-hand-point-right"></i>
+							<span class="text">PLAY</span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="bar" id="bar"></div>
+					</div>
+				</div>
+			</section>
+			<section class="sec-project" data-sec-index="1">
+				<div class="container">
+					<h2 class="title">Project</h2>
+				</div>
+				<div class="project-inner">
+					<div class="container">
+						<div class="zoom-in-layer" style="background-image: url(/assets/images/project/project02@2x.jpg);">
+							<div class="box">
+								<div class="box-title">Square</div>
+								<div class="desc">티스토리 블로그 스킨입니다. 내용이 길면 말줄임표가 보여집니다.</div>
+								<a href="https://square.ts.wallel.com/" class="url" target="_blank"></a>
+							</div>
+						</div>
+						<div class="layer-list">
+							<div class="swiper-container">
+								<ul class="swiper-wrapper">
+									<!-- <li class="swiper-slide" style="background-image: url(/assets/images/project/project01@1x.jpg);" data-title="Square" data-desc="티스토리 블로그 스킨입니다. 내용이 길면 말줄임표가 나타납니다." data-url="https://square.ts.wallel.com"></li> -->
+									<li class="swiper-slide" style="background-image: url(/assets/images/project/project03@1x.jpg);" data-title="Tistory" data-desc="티스토리 오피셜 홈페이지 개발" data-url="https://www.tistory.com"></li>
+									<li class="swiper-slide" style="background-image: url(/assets/images/project/project02@2x.jpg);" data-title="네이버" data-desc="네이버 포털 사이트 개발" data-url="https://www.naver.com"></li>
+									<li class="swiper-slide" style="background-image: url(/assets/images/project/project04@1x.jpg);" data-title="다음" data-desc="다음 포털 사이트 개발" data-url="https://www.daum.net"></li>
+								</ul>
+							</div>
+							<div class="arrow">
+								<div class="prev"></div>
+								<div class="next">
+									<i class="fas fa-chevron-right"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="sec-team" data-sec-index="2">
+				<div class="container">
+					<h2 class="title">Team</h2>
+				</div>
+				<div class="container bg">
+					<ul class="tabs">
+						<li class="tab active"><a href="#tab01">Designer</a></li>
+						<li class="tab"><a href="#tab02">Back-end Developer</a></li>
+						<li class="tab"><a href="#tab03">Front-end Developer</a></li>
+					</ul>
+					<div class="team-wrap">
+						<ul class="team active" data-tab-index="tab01" data-team="design" data-user='{"results" : 3, "gender" : "female"}'>
+							<li></li>
+						</ul>
+						<ul class="team" data-tab-index="tab02" data-team="back" data-user='{"results" : 2, "gender" : ""}'>
+							<li></li>
+						</ul>
+						<ul class="team" data-tab-index="tab03" data-team="front" data-user='{"results" : 1, "gender" : ""}'>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="sec-form" data-sec-index="3">
+				<div class="container">
+					<div class="bg"></div>
+					<div class="form-wrap">
+						<form class="contact-form" action="" name="" method="POST" onsubmit="return form_submit()">
+							<fieldset>
+								<legend class="blind">프로젝트 의뢰하기</legend>
+								<p>
+									<label for="">Company or Your-name</label>
+									<input name="uname" type="text" placeholder="Company or Your-name">
+									<span class="error-msg"></span>
+								</p>
+								<p>
+									<label for="">Email</label>
+									<input name="email" type="email" placeholder="webmaster@example.com">
+									<span class="error-msg"></span>
+								</p>
+								<p>
+									<label for="">Messages</label>
+									<textarea name="content" cols="20" rows="10" placeholder="Please enter your request."></textarea>
+									<span class="error-msg"></span>
+								</p>
+								<button type="button" id="send_btn" class="send">Send Request<i class="far fa-paper-plane"></i></button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer id="footer">
+			<p>&copy; 2022 Yoo Nam Mi</p>
+			<ul>
+				<li><a href="https://jquery.com" target="_blank">jQuery,</a></li>
+				<li><a href="https://swiperjs.com" target="_blank">Swiper,</a></li>
+				<li><a href="https://fontawesome.com" target="_blank">Font Awesome 5,</a></li>
+				<li><a href="https://randomuser.me/" target="_blank">Random User Generator,</a></li>
+				<li><a href="https://unsplash.com/" target="_blank">Unsplash,</a></li>
+				<li><a href="https://www.vecteezy.com/free-vector/website" target="_blank">Website Vectors by Vecteezy</a></li>
+			</ul>
+		</footer>
+
+	</div><!-- // wrap -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="/assets/js/main.js"></script>
+
+</body>
+</html>
